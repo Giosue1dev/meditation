@@ -6,6 +6,9 @@ body{
   text-align: center;
   color: white;
 }
+h3{
+  color:white;
+}
 .PomodoroTimer {
   display: flex;
   flex-direction: column-reverse;
