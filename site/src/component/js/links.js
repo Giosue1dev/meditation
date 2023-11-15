@@ -7,30 +7,31 @@ function OpenLinks() {
 
   return (
     <div className="linkcontainer">
-      <h3>Choose a Sound </h3>
+      <h3>Choose a type of meditation </h3>
       <button
         className="linkbuttons"
-        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=def8h9NCSL8")}
+        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=4Zr2MRO7mbc")}
       >
-        waterfalls
+        relax voice
       </button>
       <button
         className="linkbuttons"
-        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=MjJMQuJ7eNo")}
+        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=ohrGV_sm9E4")}
       >
-        Rain
+        breathing 
       </button>
       <button
         className="linkbuttons"
-        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=h6Ez_5dd9Bc&t=17s")}
+        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=qsiCrGo8nO4")}
       >
-        wind
+       
+       beginners
       </button>
       <button
         className="linkbuttons"
-        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=I0oLjBDB2NQ")}
+        onClick={() => openLinkInNewTab("https://www.youtube.com/watch?v=M5VOQ0CBmec")}
       >
-        fire
+        Fast
       </button>
     </div>
   );

@@ -1,30 +1,35 @@
-body{
-  background: linear-gradient(to bottom, #FF69B4, #800080);
-  height: 100vh;
+body {
+  background-color:#800080;
+  height: 10vh;
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif;
 }
-.Title{
+
+.Title {
   text-align: center;
   color: white;
 }
-h3{
-  color:white;
+
+h3 {
+  color: white;
 }
+
 .PomodoroTimer {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   width: 90%;
-  background-color: transparent; 
+  background-color: transparent;
   color: #fff;
-  font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  margin-left: 5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  margin: 5% auto; /* Center the timer horizontally, with 5% margin on top and bottom */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 input[type="number"] {
-  width: 150px;
+  width: 100%; /* Make the input full width */
+  box-sizing: border-box; /* Include padding and border in the width */
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -39,10 +44,12 @@ input[type="number"] {
   display: flex;
   justify-content: center;
 }
-.buttons{
+
+.buttons {
   display: flex;
   flex-direction: row;
 }
+
 .Button {
   font-size: 18px;
   margin: 5px;
@@ -63,9 +70,9 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%; /* Make the timer full width */
   max-width: 400px;
-  margin: 20px;
+  margin: 20px auto; /* Center the timer horizontally */
 }
 
 .time-display {
@@ -111,40 +118,18 @@ input[type="number"] {
   align-items: center;
   width: 100%;
   text-align: center;
-  background: #333; 
+  background: #333;
 }
 
 .phrase-text {
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 90%; /* Adjusted width for responsiveness */
+  margin: 5% auto; /* Center the text horizontally with 5% margin on top and bottom */
   color: white;
   font-size: 24px;
   animation: fadeOut 20s 100s ease-in-out forwards, fadeIn 2s 120s ease-in-out forwards;
   text-align: center;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .linkcontainer {
   text-align: center;
   margin-top: 20px;
@@ -174,4 +159,64 @@ input[type="number"] {
 .linkbuttons:active {
   background-color: #1f9945;
   transform: scale(0.95);
+}
+
+@media only screen and (max-width: 768px) {
+  .PomodoroTimer {
+    width: 80%;
+    margin: 5% auto;
+    padding: 9px; /* Adjusted padding for smaller screens */
+  }
+  
+  input[type="number"] {
+    width: 70%; /* Adjusted width for smaller screens */
+  }
+
+  .Button {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .time-display {
+    font-size: 22px; /* Adjusted font size for smaller screens */
+  }
+
+  .phrase-text {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Media Query for even smaller screens, like phones */
+@media only screen and (max-width: 480px) {
+  .Title {
+    font-size: 22px; /* Adjusted font size for smaller screens */
+  }
+  
+  h3 {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .PomodoroTimer {
+    padding: 8px; /* Adjusted padding for smaller screens */
+  }
+
+  input[type="number"] {
+    width: 70%; /* Make the input full width on smaller screens */
+  }
+
+  .Button {
+    font-size: 12px; /* Adjusted font size for smaller screens */
+  }
+
+  .time-display {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .phrase-text {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .linkbuttons {
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    padding: 8px 18px; /* Adjusted padding for smaller screens */
+  }
 }
