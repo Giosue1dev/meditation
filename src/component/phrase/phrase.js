@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './phrase.css';
 
 const phrases = [
   "Find a quiet place: Choose a quiet, distraction-free place where you can sit or lie down comfortably. Make sure you are comfortable and have a relaxed posture. You can sit on a chair, a cushion or directly on the floor. The important thing is to find a position that allows you to be stable and comfortable.",

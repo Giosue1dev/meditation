@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import './timer.css';
 function PomodoroTimer() {
   const [time, setTime] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);

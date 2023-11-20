@@ -1,8 +1,8 @@
 import React from "react";
-import "./css/App.css";
-import PomodoroTimer from './js/timer';
-import Phrase from './js/phrase';
-import OpenLinks from './js/links'
+import "./App.css";
+import PomodoroTimer from './timer/timer';
+import Phrase from './phrase/phrase';
+import OpenLinks from './links/links'
 
 function App() {
   return (

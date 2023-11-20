@@ -1,0 +1,97 @@
+.PomodoroTimer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 5% auto; /* Center the timer horizontally, with 5% margin on top and bottom */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="number"] {
+    width: 100%; /* Make the input full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Button:hover {
+    background: #1f9945;
+  }
+  
+  .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make the timer full width */
+    max-width: 400px;
+    margin: 20px auto; /* Center the timer horizontally */
+  }
+  
+  .time-display {
+    font-size: 36px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .progress {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: #27ae60;
+    border-radius: 5px;
+    position: absolute;
+  }
+  
+  .arc-progress {
+    width: 80%;
+    height: 100%;
+    background: #e74c3c;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    z-index: -1;
+  }

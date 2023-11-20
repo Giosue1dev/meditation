@@ -1,0 +1,81 @@
+body {
+  background-color:#800080;
+  height: 10vh;
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif;
+}
+
+.Title {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .PomodoroTimer {
+    width: 80%;
+    margin: 5% auto;
+    padding: 9px; /* Adjusted padding for smaller screens */
+  }
+  
+  input[type="number"] {
+    width: 70%; /* Adjusted width for smaller screens */
+  }
+
+  .Button {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .time-display {
+    font-size: 22px; /* Adjusted font size for smaller screens */
+  }
+
+  .phrase-text {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Media Query for even smaller screens, like phones */
+@media only screen and (max-width: 480px) {
+  .Title {
+    font-size: 22px; /* Adjusted font size for smaller screens */
+  }
+  
+  h3 {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .PomodoroTimer {
+    padding: 8px; /* Adjusted padding for smaller screens */
+  }
+
+  input[type="number"] {
+    width: 70%; /* Make the input full width on smaller screens */
+  }
+
+  .Button {
+    font-size: 12px; /* Adjusted font size for smaller screens */
+  }
+
+  .time-display {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .phrase-text {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .linkbuttons {
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    padding: 8px 18px; /* Adjusted padding for smaller screens */
+  }
+}

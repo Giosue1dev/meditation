@@ -1,0 +1,17 @@
+.phrase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background: #333;
+  }
+  
+  .phrase-text {
+    width: 90%; /* Adjusted width for responsiveness */
+    margin: 5% auto; /* Center the text horizontally with 5% margin on top and bottom */
+    color: white;
+    font-size: 24px;
+    animation: fadeOut 20s 100s ease-in-out forwards, fadeIn 2s 120s ease-in-out forwards;
+    text-align: center;
+  }

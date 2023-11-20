@@ -1,0 +1,30 @@
+.linkcontainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .linkbuttons {
+    background-color: #27ae60;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    outline: none;
+  }
+  
+  .linkbuttons:hover {
+    background-color: #1f9945;
+    transform: scale(1.05);
+  }
+  
+  .linkbuttons:active {
+    background-color: #1f9945;
+    transform: scale(0.95);
+  }
